@@ -68,7 +68,6 @@ h3 {
 }
 
 .profile__card {
-  width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,7 +84,7 @@ h3 {
   border-top-left-radius: 15px;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
   .profile__card, .profile__wrapper {
     width: auto;
   }
