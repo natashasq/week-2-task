@@ -85,6 +85,22 @@ h3 {
   border-top-left-radius: 15px;
 }
 
+@media screen and (max-width: 350px) {
+  .profile__card, .profile__wrapper {
+    width: auto;
+  }
+
+  .profile__wrapper {
+    padding: 20px;
+  }
+
+  .profile__header {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+  }
+}
+
 .profile__content {
   display: flex;
   flex-direction: column;
