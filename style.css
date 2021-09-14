@@ -30,7 +30,6 @@ h3 {
 }
 
 .profile__wrapper {
-  height: 375px;
   width: 350px;
   margin: auto;
   position: relative;
@@ -69,7 +68,6 @@ h3 {
 }
 
 .profile__card {
-  height: 375px;
   width: 350px;
   display: flex;
   flex-direction: column;
