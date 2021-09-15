@@ -1,0 +1,155 @@
+html,
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+h2,
+h3 {
+  margin: 0;
+}
+
+.profile {
+  height: 100%;
+  width: 100%;
+  background-color: hsl(185, 75%, 39%);
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.profile__wrapper {
+  width: 350px;
+  margin: auto;
+  position: relative;
+}
+
+.profile__wrapper::before {
+  position: absolute;
+  content: "";
+  background-image: url(assets/icons/bg-pattern-top.svg);
+  background-repeat: no-repeat;
+  height: 200%;
+  width: 200%;
+  top: -120%;
+  left: -157%;
+  transform: rotate(-85deg) scale(1, -1);
+}
+
+.profile__wrapper::after {
+  position: absolute;
+  content: "";
+  background-image: url(assets/icons/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  height: 300%;
+  width: 300%;
+  bottom: -250%;
+  right: -245%;
+  transform: rotate(-270deg) scale(1, -1);
+}
+
+@media screen and (max-width: 650px) {
+  .profile__wrapper::after {
+    bottom: -250%;
+    right: -225%;
+    transform: rotate(122deg) scale(1, -1);
+  }
+}
+
+.profile__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 20px 3px rgba(106, 106, 106, 0.6);
+  border-radius: 15px;
+  margin: auto;
+  background-color: white;
+  z-index: 1;
+  position: relative;
+}
+
+.profile__header {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+@media screen and (max-width: 400px) {
+  .profile__card, .profile__wrapper {
+    width: auto;
+  }
+
+  .profile__wrapper {
+    padding: 20px;
+  }
+
+  .profile__header {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+.profile__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile__image {
+  height: 100px;
+  width: 100px;
+  border: 5px solid white;
+  border-radius: 50%;
+  margin-top: -50px;
+}
+
+.profile__info {
+  display: flex;
+  margin-top: 20px;
+}
+
+.profile__age {
+  color: hsl(0, 0%, 59%);
+  margin-left: 10px;
+}
+
+.profile__location {
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+  margin-top: 10px;
+}
+
+.profile__footer {
+  display: flex;
+  height: 90px;
+  padding: 25px 55px;
+  justify-content: space-between;
+  width: 100%;
+  border-top: 1px solid lightgray;
+  margin-top: auto;
+}
+
+.profile__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile__details-type {
+  font-size: 12px;
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+  margin-top: 5px;
+}
